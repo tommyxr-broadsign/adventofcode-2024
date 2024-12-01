@@ -1,0 +1,4 @@
+name = "aoc"
+uuid = "3f9bfbe4-922d-442f-bb3c-29d3b0484278"
+authors = ["Tommy-Xavier Robillard <tommyx.robillard@broadsign.com>"]
+version = "0.1.0"

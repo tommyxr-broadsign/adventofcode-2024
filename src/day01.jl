@@ -18,7 +18,12 @@ function part2(input::String)
 	a = first.(data)
 	b = last.(data)
 	
-	map(n -> n * count(==(n), b), a) |> sum
+	occurences = Dict{Int, Int}()
+	for n in b
+		occurences[n] = get(occurences, n, 0) + 1
+	end
+	
+	map(n -> n*get(occurences, n, 0), a) |> sum
 end
 
 end
